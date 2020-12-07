@@ -21,80 +21,75 @@ import Login from './View/Login';
 
 
 function Home() {
-  return <div className="App">   
-  <header className="App-header">  
-  This is Home 
+  return <div className="App">
+    <header className="App-header">
+      This is Home
   </header>
   </div>;
 }
 
-
-
-
-
-
 function App() {
-  return (    
-  
+  return (
+
     <Router>
-    <div>
-    <nav>
-      <ul>
-         <li>
-          <Link to="/">Home</Link>
-         </li>
+      <div>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
 
-         <li>
-         <Link to="/login">Login</Link>
-        </li> 
+            <li>
+              <Link to="/login">Login</Link>
+            </li>
 
-         <li>
-         <Link to="/product">Product</Link>
-        </li> 
+            <li>
+              <Link to="/product">Product</Link>
+            </li>
 
-         <li>
-         <Link to="/person">Person</Link>
-        </li> 
+            <li>
+              <Link to="/person">Person</Link>
+            </li>
 
-        <li>
-        <Link to="/order">Order</Link>
-       </li> 
+            <li>
+              <Link to="/order">Order</Link>
+            </li>
 
-         <li>
-          <Link to="/photos">Photos</Link>
-         </li>  
-      </ul>
-      </nav>
+            <li>
+              <Link to="/photos">Photos</Link>
+            </li>
+          </ul>
+        </nav>
 
-      <Switch>
+        <Switch>
 
-      <Route path="/product">
-      <Product/>
-       </Route>
+          <Route path="/product">
+            <Product />
+          </Route>
 
-       <Route path="/login">
-      <Login/>
-       </Route>
+          <Route path="/login">
+            <Login />
+          </Route>
 
-      <Route path="/person">
-      <Person/>
-       </Route>
+          <Route path="/person">
+            <Person />
+          </Route>
 
-       <Route path="/order">
-      <Order/>
-       </Route>
+          <Route path="/order">
+            <Order />
+          </Route>
 
-        <Route path="/photos">
-          <Photos />
-        </Route>
-       
-        <Route path="/">
-          <Home />
-        </Route>
+          <Route path="/photos">
+            <Photos />
+          </Route>
 
-      </Switch>
-    </div>
-  </Router>
+          <Route path="/">
+            <Home />
+          </Route>
+
+        </Switch>
+      </div>
+    </Router>
 
   );
 }

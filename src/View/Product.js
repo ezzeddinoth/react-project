@@ -1,6 +1,6 @@
 import React from 'react';
 import Table from '../Component/Table';
-import {getAllProducts,getProductById,deleteProduct,updateProduct,saveProduct} from '../Service/ProductService';
+import {getAllProducts,deleteProduct,updateProduct,saveProduct} from '../Service/ProductService';
 
 
 export default class Product extends React.Component {

@@ -10,20 +10,6 @@ export async function getPerson() {
     return data;
 }
 
-export async function getPersonById(id) {
-  let data;
-  await axios.get(`/person/person?id=`+id)
-        .then(res => {
-          const person = res.data;
-          data = person;
-  })
-  let data1=[];
-  data1.push(data);
-//  console.log('data: '+data.firstName)
-//  console.log('data1: '+data1[0].firstName)
-  return data;
-}
-
 export async function deletePerson(id) {
   await axios.delete(`/person/person?id=`+id)
       //TODO Check...

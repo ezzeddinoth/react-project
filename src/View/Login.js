@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Login.css';
-import{getEmail,getRolle} from '../Service/LoginService';
+import{getRolle} from '../Service/LoginService';
 
 export default class Login extends Component {
 
