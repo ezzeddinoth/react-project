@@ -10,7 +10,6 @@ import {
 
 } from "react-router-dom";
 
-import Photos from './Component/Photos';
 
 
 import Person from './View/Person';
@@ -60,9 +59,6 @@ function App() {
             <Link to="/elegantOrder">ElegantOrder</Link>
             </li>
 
-            <li>
-              <Link to="/photos">Photos</Link>
-            </li>
           </ul>
         </nav>
 
@@ -86,10 +82,6 @@ function App() {
 
           <Route path="/elegantOrder">
             <ElegantOrder />
-          </Route>
-
-          <Route path="/photos">
-            <Photos />
           </Route>
 
           <Route path="/">

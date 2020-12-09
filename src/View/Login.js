@@ -8,13 +8,10 @@ export default class Login extends Component {
         super();
         this.state = {
             name: "",
-            password:"", 
-            RememberMe: false
+            password:""
         }
         this.setVariables = this.setVariables.bind(this);
         this.handleCancel = this.handleCancel.bind(this);
-        this.handleCheckBox = this.handleCheckBox.bind(this);
-        this.isAdmin = this.isAdmin.bind(this); 
     }
     
     async setVariables(e){
@@ -24,21 +21,9 @@ export default class Login extends Component {
         alert('YOU ARE NOT AUTHORIZED')  
     }
 
-    isAdmin(){  
-        this.state.rolle? this.state.rolle.isAdmin? alert("You are Admin"):alert("You are User")
-        : alert('accessNotAllowed');     
-    }
-
-
-
     handleCancel(){
         this.setState ({name: "",password:""});
        
-    }
-
-    handleCheckBox(){
-         var  r=this.state.RememberMe;
-         this.setState({RememberMe: !r})
     }
 
     render() {
@@ -59,10 +44,6 @@ export default class Login extends Component {
                 
                  <button  type="submit">Login</button>
                  <button type="button" onClick={this.handleCancel} class="cancelbtn">Cancel</button>
-                 <p>{/*<label> */}
-                 <input type="checkbox" checked={ this.state.RememberMe }
-                 onClick={ this.handleCheckBox } name="remember"/> Remember me
-                 </p>{/*</label> */}
                  </div>
 
                  {/*<div class="container">
