@@ -12,7 +12,7 @@ Hier just Component Table to be concidered, it creates dynamic table (number of 
 View: for each page in user interface, takes data from Service and pack it into Component. 
 In this place some more function could be defined to make the page more dynamic for the user needs.
 
-To run the project clone it then use npm start.
+To run the project clone it then use npm install for first run then npm start.
 
 
 
