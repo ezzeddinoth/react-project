@@ -16,6 +16,7 @@ import Photos from './Component/Photos';
 import Person from './View/Person';
 import Product from './View/Product';
 import Order from './View/Order';
+import ElegantOrder from './View/ElegantOrderView';
 import Login from './View/Login';
 
 
@@ -56,6 +57,10 @@ function App() {
             </li>
 
             <li>
+            <Link to="/elegantOrder">ElegantOrder</Link>
+            </li>
+
+            <li>
               <Link to="/photos">Photos</Link>
             </li>
           </ul>
@@ -77,6 +82,10 @@ function App() {
 
           <Route path="/order">
             <Order />
+          </Route>
+
+          <Route path="/elegantOrder">
+            <ElegantOrder />
           </Route>
 
           <Route path="/photos">
